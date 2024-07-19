@@ -1,0 +1,11 @@
+{
+  "private": "true",
+  "name": "native-api-key-demo",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react-native": "0.74.3"
+  }
+}

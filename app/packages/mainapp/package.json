@@ -1,0 +1,30 @@
+{
+  "name": "mainapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "android": "expo run:android",
+    "android:prod": "expo run:android --variant release",
+    "ios": "npx pod-install && expo run:ios",
+    "ios:prod": "npx pod-install && expo run:ios --configuration Release"
+  },
+  "dependencies": {
+    "expo": "~51.0.21",
+    "expo-native-configuration": "*",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.2.45",
+    "typescript": "~5.3.3"
+  },
+  "private": true,
+  "expo": {
+    "autolinking": {
+      "nativeModulesDir": ".."
+    }
+  }
+}
